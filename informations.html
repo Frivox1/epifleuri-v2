@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <title>L'Epi Fleuri - Informations</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPe4yOHMcE85NHLjuu_Ecq5KXbMbNd7Fs"></script>
+    <style>
+        body {
+            font-family: 'Aclonica', sans-serif;
+            background-color: #C6CC27;
+        }
+        .colo {
+            color: #d83271;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-[#C6CC27] min-h-screen flex flex-col">
+    <!-- Header -->
+    <nav class="bg-[#d83271] h-[60px] flex justify-between items-center px-5 fixed top-0 w-full z-50">
+        <div class="flex items-center">
+            <img src="images/logo_epifleuri.png" alt="Logo" class="h-10 w-10 rounded-lg mr-5">
+        </div>
+        <ul class="flex list-none m-0 p-0">
+            <li class="ml-5"><a href="index.html" class="text-white hover:underline text-sm md:text-base">Accueil</a></li>
+            <li class="ml-5"><a href="produit.html" class="text-white hover:underline text-sm md:text-base">Produits</a></li>
+            <li class="ml-5"><a href="evenement.html" class="text-white hover:underline text-sm md:text-base">Evénements</a></li>
+            <li class="ml-5"><a href="informations.html" class="text-white hover:underline text-sm md:text-base">Informations</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="pt-20 pb-10 text-center text-white" style="background-image: url('images/interieur.jpeg'); background-size: cover; background-position: center; min-height: 70vh; display: flex; align-items: center; justify-content: center;">
+        <h2 class="text-6xl text-white drop-shadow-lg">Nos informations</h2>
+    </section>
+
+    <!-- Contact Info -->
+    <div class="max-w-2xl mx-auto mt-16 px-4 pb-20">
+        <h3 class="text-2xl text-[#d83271] mb-4">Vous désirez nous contacter ?</h3>
+        <p class="text-[#d83271] mb-2">Vous pouvez nous contacter par mail à l'adresse suivante : <a href="mailto:epifleurimagasin@outlook.com" class="underline">epifleurimagasin@outlook.com</a></p>
+        <p class="text-[#d83271] mb-6">Vous pouvez également nous contacter par téléphone au numéro suivant : <a href="tel:+3281879555" class="underline">081 87 95 55</a></p>
+
+        <h3 class="text-2xl text-[#d83271] mb-4">Vous désirez faire un tour dans notre magasin ?</h3>
+        <p class="text-[#d83271] mb-6">Venez nous rendre visite à l'adresse suivante : <span class="colo">Chaussée de Namur 74, 1367 Ramillies</span></p>
+
+        <h3 class="text-2xl text-[#d83271] mb-4">Vous ne savez malheureusement pas vous déplacer ou vous désirez faire une surprise qui fonctionne à tous les coups ?</h3>
+        <p class="text-[#d83271] mb-6">Vous avez maintenant la possibilité de <span class="colo">commander</span> vos fleurs <br>et de vous les <span class="colo">faire livrer</span> chez vous ou chez quelqu'un d'autre</p>
+
+        <h3 class="text-2xl text-[#d83271] mb-4">Vous désirez nous suivre sur notre page Facebook ?</h3>
+        <p class="text-[#d83271] mb-6">Rejoignez notre page ! <a href="https://www.facebook.com/lepifleuri" class="underline" target="_blank">Page Facebook L'Epifleuri</a></p>
+
+        <h3 class="text-2xl text-[#d83271] mb-4 underline">Horaires</h3>
+        <p class="text-[#d83271]">Lundi - Mardi : 9h00 - 18h00</p>
+        <p class="text-[#d83271]">Mercredi : Fermé</p>
+        <p class="text-[#d83271]">Jeudi - Vendredi - Samedi : 9h00 - 18h00</p>
+        <p class="text-[#d83271]">Dimanche : 9h00 - 13h00</p>
+
+        <br>
+
+        <!-- Map -->
+        <div id="map" class="w-full h-[400px] rounded-lg"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white flex justify-between px-5 py-5 bg-[#d83271] mt-auto">
+        <p class="m-0 text-sm">&copy; 2026 L'Epi Fleuri</p>
+        <nav class="flex">
+            <p class="m-0 text-sm">Made by Valery Mertens and Nicolas Lasch</p>
+        </nav>
+    </footer>
+
+    <script>
+        function initMap() {
+            var myLatLng = { lat: 50.629951, lng: 4.869690 };
+          
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: myLatLng
+            });
+          
+            var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              title: "L'Epifleuri"
+            });
+          }
+        initMap();
+    </script>
+</body>
+</html>

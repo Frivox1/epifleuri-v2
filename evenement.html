@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <title>L'Epi Fleuri - Evénements</title>
+    <style>
+        body {
+            font-family: 'Aclonica', sans-serif;
+            background-color: #C6CC27;
+        }
+    </style>
+</head>
+<body class="bg-[#C6CC27] min-h-screen flex flex-col">
+    <!-- Header -->
+    <nav class="bg-[#d83271] h-[60px] flex justify-between items-center px-5 fixed top-0 w-full z-50">
+        <div class="flex items-center">
+            <img src="images/logo_epifleuri.png" alt="Logo" class="h-10 w-10 rounded-lg mr-5">
+        </div>
+        <ul class="flex list-none m-0 p-0">
+            <li class="ml-5"><a href="index.html" class="text-white hover:underline text-sm md:text-base">Accueil</a></li>
+            <li class="ml-5"><a href="produit.html" class="text-white hover:underline text-sm md:text-base">Produits</a></li>
+            <li class="ml-5"><a href="evenement.html" class="text-white hover:underline text-sm md:text-base">Evénements</a></li>
+            <li class="ml-5"><a href="informations.html" class="text-white hover:underline text-sm md:text-base">Informations</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="pt-20 pb-10 text-center text-white" style="background-image: url('images/interieur.jpeg'); background-size: cover; background-position: center; min-height: 70vh; display: flex; align-items: center; justify-content: center;">
+        <h2 class="text-3xl md:text-4xl text-white drop-shadow-lg">Evénements pour lesquels vous pouvez compter sur nous</h2>
+    </section>
+
+    <br><br>
+
+    <!-- Mariage -->
+    <section class="banner-mariage text-center py-8 bg-[#d83271]">
+        <h2 class="text-3xl text-white">Les mariages</h2>
+    </section>
+
+    <br><br>
+
+    <div class="flex flex-wrap justify-center gap-4 px-4">
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/bouquet.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/bouquet1.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/bouquet2.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/escalier0.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/escalier1.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/escalier2.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/montage0.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/montage1.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/montage2.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/voiture.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/voiture1.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/diademe.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/parcours.gif" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/mariage/montage3.jpeg" class="w-full rounded-lg">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="info text-center text-[#d83271] px-4">
+        <p>Nous pouvons également gérer les communions et les baptêmes avec le même style que vous voyez ci-dessus</p>
+    </div>
+
+    <br><br><br><br>
+
+    <!-- Décès -->
+    <section class="banner-deces text-center py-8 bg-gray-700">
+        <h2 class="text-3xl text-white">Les décès</h2>
+    </section>
+
+    <br><br>
+
+    <div class="flex flex-wrap justify-center gap-4 px-4 pb-20">
+        <div class="photo-container w-[300px]">
+            <img src="images/deces/mortuaire3.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/deces/mortuaire5.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/deces/mortuaire4.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/deces/mortuaire1.jpeg" class="w-full rounded-lg">
+        </div>
+        <div class="photo-container w-[300px]">
+            <img src="images/deces/mortuaire2.jpeg" class="w-full rounded-lg">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white flex justify-between px-5 py-5 bg-[#d83271] mt-auto">
+        <p class="m-0 text-sm">&copy; 2026 L'Epi Fleuri</p>
+        <nav class="flex">
+            <p class="m-0 text-sm">Made by Valery Mertens and Nicolas Lasch</p>
+        </nav>
+    </footer>
+</body>
+</html>
